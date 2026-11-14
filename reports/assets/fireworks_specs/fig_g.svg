@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1716" width="1600" height="1716" data-generator="fireworks-tech-graph" data-schema-version="1" data-text-metrics="heuristic-v1" data-style-id="1" data-visual-theme="Flat Icon" data-diagram-type="architecture" data-motion-scene="" data-semantic-profile="generic" data-semantic-valid="true" data-quality-profile="showcase" data-max-bends-per-edge="2" data-max-total-bends="8" data-max-route-stretch="1.35" data-max-bridged-crossings="0" data-min-node-gap="40.0" data-min-container-gutter="20.0" data-min-label-clearance="4.0" data-min-segment-length="16.0">
+  <defs>
+    <marker id="arrowA" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowB" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+    <marker id="arrowC" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowE" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f97316"/>
+    </marker>
+    <marker id="arrowF" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowH" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowGlass" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+    <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', 'Microsoft JhengHei', 'SimHei', sans-serif; }
+    .title { font-size: 30px; font-weight: 700; fill: #111827; }
+    .subtitle { font-size: 14px; font-weight: 500; fill: #6b7280; }
+    .section { font-size: 13px; font-weight: 700; fill: #2563eb; letter-spacing: 1.4px; }
+    .section-sub { font-size: 12px; font-weight: 500; fill: #64748b; }
+    .node-title { font-weight: 700; fill: #111827; }
+    .node-sub { font-weight: 500; fill: #6b7280; }
+    .node-type { font-size: 12px; font-weight: 700; fill: #64748b; letter-spacing: 0.08em; }
+    .arrow-label { font-size: 12px; font-weight: 600; fill: #6b7280; }
+    .legend { font-size: 12px; font-weight: 500; fill: #6b7280; }
+    .footnote { font-size: 12px; font-weight: 500; fill: #64748b; }
+    .metric-label { font-size: 8.5px; font-weight: 700; fill: #64748b; text-transform: uppercase; }
+    .metric-value { font-size: 9.5px; font-weight: 700; fill: #111827; }
+    </style>
+  </defs>
+  <rect data-graph-role="background" width="1600.0" height="1716.0" fill="#ffffff"/>
+  <text x="800.0" y="56" text-anchor="middle" class="title">图 G · GPU ↔ NPU 能力差距标注图（差距 → 模块映射 ＋ 补充初步方案）</text>
+  <text x="800.0" y="82" text-anchor="middle" class="subtitle">左列 = 差距（涉及模块）· 右列 = 补充初步方案 — 红块为 §4 高/中影响项，琥珀为演进项</text>
+  <g id="perf" data-graph-role="container" data-container-id="perf" data-semantic-role="boundary" data-graph-bounds="80,150,1520,606">
+  <rect data-graph-role="container" x="80.0" y="150.0" width="1440.0" height="456.0" rx="16.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="174.0" class="section">性能类差距（高影响）— GPU 已支持 · NPU 缺失且暂无规划</text>
+    <rect id="perf-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="156" width="373.72" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="eco" data-graph-role="container" data-container-id="eco" data-semantic-role="boundary" data-graph-bounds="80,650,1520,1106">
+  <rect data-graph-role="container" x="80.0" y="650.0" width="1440.0" height="456.0" rx="16.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="674.0" class="section">生态/运行时类差距（中影响）</text>
+    <rect id="eco-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="656" width="206.54" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="run" data-graph-role="container" data-container-id="run" data-semantic-role="boundary" data-graph-bounds="80,1150,1520,1606">
+  <rect data-graph-role="container" x="80.0" y="1150.0" width="1440.0" height="456.0" rx="16.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="1174.0" class="section">运行时演进类（部分支持 / 进行中）</text>
+    <rect id="run-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="1156" width="241.9" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="node-g1" data-graph-role="node" data-node-id="g1" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,206,535.4,302">
+  <rect x="104.0" y="206.0" width="431.4" height="96.0" rx="10.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="torch.compile / 区域编译" data-text-max-width="407.4" x="319.7" y="254.0" text-anchor="middle" class="node-title" font-size="18">torch.compile / 区域编译</text>
+  <text data-text-role="subtitle" data-full-text="compile.py regionally_compile — NPU inductor=False → 全 eager" data-text-max-width="407.4" x="319.7" y="276.0" text-anchor="middle" class="node-sub" font-size="12">compile.py regionally_compile — NPU inductor=False → 全 eager</text>
+  </g>
+  <g id="node-p1" data-graph-role="node" data-node-id="p1" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,206,1496,302">
+  <rect x="579.4" y="206.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 A" data-text-max-width="892.6" x="1037.7" y="254.0" text-anchor="middle" class="node-title" font-size="18">方案 A</text>
+  <text data-text-role="subtitle" data-full-text="acl-graph/Fx pattern 替换 or torch_npu cpp 扩展；短期 hooks 级融合" data-text-max-width="892.6" x="1037.7" y="276.0" text-anchor="middle" class="node-sub" font-size="12">acl-graph/Fx pattern 替换 or torch_npu cpp 扩展；短期 hooks 级融合</text>
+  </g>
+  <g id="node-g2" data-graph-role="node" data-node-id="g2" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,346,535.4,442">
+  <rect x="104.0" y="346.0" width="431.4" height="96.0" rx="10.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="DiT CUDA Graph decode" data-text-max-width="407.4" x="319.7" y="394.0" text-anchor="middle" class="node-title" font-size="18">DiT CUDA Graph decode</text>
+  <text data-text-role="subtitle" data-full-text="qwen_image_21/decode_graph.py torch.cuda.CUDAGraph — NPU 无对应" data-text-max-width="407.4" x="319.7" y="416.0" text-anchor="middle" class="node-sub" font-size="11.04">qwen_image_21/decode_graph.py torch.cuda.CUDAGraph — NPU 无对应</text>
+  </g>
+  <g id="node-p2" data-graph-role="node" data-node-id="p2" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,346,1496,442">
+  <rect x="579.4" y="346.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 B" data-text-max-width="892.6" x="1037.7" y="394.0" text-anchor="middle" class="node-title" font-size="18">方案 B</text>
+  <text data-text-role="subtitle" data-full-text="NPUGraph 捕获（graph_tools.py 已有 exact-signature 助手可复用）" data-text-max-width="892.6" x="1037.7" y="416.0" text-anchor="middle" class="node-sub" font-size="12">NPUGraph 捕获（graph_tools.py 已有 exact-signature 助手可复用）</text>
+  </g>
+  <g id="node-g3" data-graph-role="node" data-node-id="g3" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,486,535.4,582">
+  <rect x="104.0" y="486.0" width="431.4" height="96.0" rx="10.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="高性能注意力后端 ×6" data-text-max-width="407.4" x="319.7" y="534.0" text-anchor="middle" class="node-title" font-size="18">高性能注意力后端 ×6</text>
+  <text data-text-role="subtitle" data-full-text="SAGE_ATTN/3 · FlashInfer · TRTLLM · CUDNN · VSA · FA3-HUB — NPU 仅 FA/SDPA/RAINFUSION" data-text-max-width="407.4" x="319.7" y="556.0" text-anchor="middle" class="node-sub" font-size="10.5">SAGE_ATTN/3 · FlashInfer · TRTLLM · CUDNN · VSA · FA3-HUB — NPU 仅…</text>
+  </g>
+  <g id="node-p3" data-graph-role="node" data-node-id="p3" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,486,1496,582">
+  <rect x="579.4" y="486.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 C" data-text-max-width="892.6" x="1037.7" y="534.0" text-anchor="middle" class="node-title" font-size="18">方案 C</text>
+  <text data-text-role="subtitle" data-full-text="MindIE-SD sparse_attention 深化 ＋ MindIE quant-attn；开源算子对齐 VSA 语义" data-text-max-width="892.6" x="1037.7" y="556.0" text-anchor="middle" class="node-sub" font-size="12">MindIE-SD sparse_attention 深化 ＋ MindIE quant-attn；开源算子对齐 VSA 语义</text>
+  </g>
+  <g id="node-g4" data-graph-role="node" data-node-id="g4" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,706,535.4,802">
+  <rect x="104.0" y="706.0" width="431.4" height="96.0" rx="10.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="MRv2（duplex / 流式音频）" data-text-max-width="407.4" x="319.7" y="754.0" text-anchor="middle" class="node-title" font-size="18">MRv2（duplex / 流式音频）</text>
+  <text data-text-role="subtitle" data-full-text="worker_v2/ GPU-only — NPU 无 runner" data-text-max-width="407.4" x="319.7" y="776.0" text-anchor="middle" class="node-sub" font-size="12">worker_v2/ GPU-only — NPU 无 runner</text>
+  </g>
+  <g id="node-p4" data-graph-role="node" data-node-id="p4" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,706,1496,802">
+  <rect x="579.4" y="706.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 D" data-text-max-width="892.6" x="1037.7" y="754.0" text-anchor="middle" class="node-title" font-size="18">方案 D</text>
+  <text data-text-role="subtitle" data-full-text="按 vllm-omni-npu-upgrade 流程移植；short term 保留 v1 通道" data-text-max-width="892.6" x="1037.7" y="776.0" text-anchor="middle" class="node-sub" font-size="12">按 vllm-omni-npu-upgrade 流程移植；short term 保留 v1 通道</text>
+  </g>
+  <g id="node-g5" data-graph-role="node" data-node-id="g5" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,846,535.4,942">
+  <rect x="104.0" y="846.0" width="431.4" height="96.0" rx="10.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="量化矩阵缺口" data-text-max-width="407.4" x="319.7" y="894.0" text-anchor="middle" class="node-title" font-size="18">量化矩阵缺口</text>
+  <text data-text-role="subtitle" data-full-text="FP8 / SVDQuant(NVFP4) / bitsandbytes / torchao — NPU 有 Int8·MXFP4/8" data-text-max-width="407.4" x="319.7" y="916.0" text-anchor="middle" class="node-sub" font-size="10.5">FP8 / SVDQuant(NVFP4) / bitsandbytes / torchao — NPU 有 Int8·MXFP…</text>
+  </g>
+  <g id="node-p5" data-graph-role="node" data-node-id="p5" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,846,1496,942">
+  <rect x="579.4" y="846.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 E" data-text-max-width="892.6" x="1037.7" y="894.0" text-anchor="middle" class="node-title" font-size="18">方案 E</text>
+  <text data-text-role="subtitle" data-full-text="msModelSlim / MindIE 量化产物接入 quantization/factory（W8A8 已有路径）" data-text-max-width="892.6" x="1037.7" y="916.0" text-anchor="middle" class="node-sub" font-size="12">msModelSlim / MindIE 量化产物接入 quantization/factory（W8A8 已有路径）</text>
+  </g>
+  <g id="node-g6" data-graph-role="node" data-node-id="g6" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,986,535.4,1082">
+  <rect x="104.0" y="986.0" width="431.4" height="96.0" rx="10.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="HSDP×FP8" data-text-max-width="407.4" x="319.7" y="1034.0" text-anchor="middle" class="node-title" font-size="18">HSDP×FP8</text>
+  <text data-text-role="subtitle" data-full-text="diffusion/quantization/hsdp_fp8.py — Cutlass 布局，GPU 专属" data-text-max-width="407.4" x="319.7" y="1056.0" text-anchor="middle" class="node-sub" font-size="12">diffusion/quantization/hsdp_fp8.py — Cutlass 布局，GPU 专属</text>
+  </g>
+  <g id="node-p6" data-graph-role="node" data-node-id="p6" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,986,1496,1082">
+  <rect x="579.4" y="986.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 F" data-text-max-width="892.6" x="1037.7" y="1034.0" text-anchor="middle" class="node-title" font-size="18">方案 F</text>
+  <text data-text-role="subtitle" data-full-text="HCCL 等价 sharded quant（MXFP4 dual-scale 已是 NPU 路线）" data-text-max-width="892.6" x="1037.7" y="1056.0" text-anchor="middle" class="node-sub" font-size="12">HCCL 等价 sharded quant（MXFP4 dual-scale 已是 NPU 路线）</text>
+  </g>
+  <g id="node-g7" data-graph-role="node" data-node-id="g7" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1206,535.4,1302">
+  <rect x="104.0" y="1206.0" width="431.4" height="96.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="并行策略验证" data-text-max-width="407.4" x="319.7" y="1254.0" text-anchor="middle" class="node-title" font-size="18">并行策略验证</text>
+  <text data-text-role="subtitle" data-full-text="cfg_parallel / USP / HSDP 代码在 — NPU 端到端验证与 MC2 overlap 缺" data-text-max-width="407.4" x="319.7" y="1276.0" text-anchor="middle" class="node-sub" font-size="11.27">cfg_parallel / USP / HSDP 代码在 — NPU 端到端验证与 MC2 overlap 缺</text>
+  </g>
+  <g id="node-p7" data-graph-role="node" data-node-id="p7" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,1206,1496,1302">
+  <rect x="579.4" y="1206.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 G" data-text-max-width="892.6" x="1037.7" y="1254.0" text-anchor="middle" class="node-title" font-size="18">方案 G</text>
+  <text data-text-role="subtitle" data-full-text="CI 扩展（A3 nightly 已跑 Wan/Qwen-Image）＋ MC2 overlap 供给" data-text-max-width="892.6" x="1037.7" y="1276.0" text-anchor="middle" class="node-sub" font-size="12">CI 扩展（A3 nightly 已跑 Wan/Qwen-Image）＋ MC2 overlap 供给</text>
+  </g>
+  <g id="node-g8" data-graph-role="node" data-node-id="g8" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1346,535.4,1442">
+  <rect x="104.0" y="1346.0" width="431.4" height="96.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="Cache × 并行 collective" data-text-max-width="407.4" x="319.7" y="1394.0" text-anchor="middle" class="node-title" font-size="18">Cache × 并行 collective</text>
+  <text data-text-role="subtitle" data-full-text="cache 后端与 SP 并行共批失配（omni 公开承认未解）" data-text-max-width="407.4" x="319.7" y="1416.0" text-anchor="middle" class="node-sub" font-size="12">cache 后端与 SP 并行共批失配（omni 公开承认未解）</text>
+  </g>
+  <g id="node-p8" data-graph-role="node" data-node-id="p8" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,1346,1496,1442">
+  <rect x="579.4" y="1346.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 H" data-text-max-width="892.6" x="1037.7" y="1394.0" text-anchor="middle" class="node-title" font-size="18">方案 H</text>
+  <text data-text-role="subtitle" data-full-text="跨 rank 一致 cache（all_reduce sync）— LiteBoost 触点②" data-text-max-width="892.6" x="1037.7" y="1416.0" text-anchor="middle" class="node-sub" font-size="12">跨 rank 一致 cache（all_reduce sync）— LiteBoost 触点②</text>
+  </g>
+  <g id="node-g9" data-graph-role="node" data-node-id="g9" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1486,535.4,1582">
+  <rect x="104.0" y="1486.0" width="431.4" height="96.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="OmniConnector 原生化" data-text-max-width="407.4" x="319.7" y="1534.0" text-anchor="middle" class="node-title" font-size="18">OmniConnector 原生化</text>
+  <text data-text-role="subtitle" data-full-text="AR→DiT Mooncake KV transfer — RFC #8928 进行中" data-text-max-width="407.4" x="319.7" y="1556.0" text-anchor="middle" class="node-sub" font-size="12">AR→DiT Mooncake KV transfer — RFC #8928 进行中</text>
+  </g>
+  <g id="node-p9" data-graph-role="node" data-node-id="p9" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="579.4,1486,1496,1582">
+  <rect x="579.4" y="1486.0" width="916.6" height="96.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="方案 I" data-text-max-width="892.6" x="1037.7" y="1534.0" text-anchor="middle" class="node-title" font-size="18">方案 I</text>
+  <text data-text-role="subtitle" data-full-text="跟进 RFC；元戎 connector 为 NPU 现行通道" data-text-max-width="892.6" x="1037.7" y="1556.0" text-anchor="middle" class="node-sub" font-size="12">跟进 RFC；元戎 connector 为 NPU 现行通道</text>
+  </g>
+  <g id="legend" data-graph-role="legend">
+    <rect id="legend-zone" data-graph-role="reserved" data-reserved-kind="legend" x="32" y="1620" width="118" height="46" rx="10" fill="none" stroke="none"/>
+    <line data-graph-role="decoration" x1="42.0" y1="1634.0" x2="72.0" y2="1634.0" stroke="#7c3aed" stroke-width="2.4" marker-end="url(#arrowA)"/>
+    <text data-graph-role="decoration" x="82.0" y="1638.0" class="legend">模块归属</text>
+  </g>
+  <g id="footer" data-graph-role="reserved" data-graph-bounds="42,1688,413,1704">
+  <text x="42.0" y="1700.0" class="footnote">差距判定基线 commit 02bb9519a；方案详见报告 §5（DiT 缺失能力）与 §4（缺失特性）</text>
+  </g>
+</svg>

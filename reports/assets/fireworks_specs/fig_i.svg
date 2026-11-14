@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2128" width="1600" height="2128" data-generator="fireworks-tech-graph" data-schema-version="1" data-text-metrics="heuristic-v1" data-style-id="1" data-visual-theme="Flat Icon" data-diagram-type="architecture" data-motion-scene="" data-semantic-profile="generic" data-semantic-valid="true" data-quality-profile="showcase" data-max-bends-per-edge="2" data-max-total-bends="8" data-max-route-stretch="1.35" data-max-bridged-crossings="0" data-min-node-gap="40.0" data-min-container-gutter="20.0" data-min-label-clearance="4.0" data-min-segment-length="16.0">
+  <defs>
+    <marker id="arrowA" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowB" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+    <marker id="arrowC" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowE" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f97316"/>
+    </marker>
+    <marker id="arrowF" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowH" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowGlass" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+    <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', 'Microsoft JhengHei', 'SimHei', sans-serif; }
+    .title { font-size: 30px; font-weight: 700; fill: #111827; }
+    .subtitle { font-size: 14px; font-weight: 500; fill: #6b7280; }
+    .section { font-size: 13px; font-weight: 700; fill: #2563eb; letter-spacing: 1.4px; }
+    .section-sub { font-size: 12px; font-weight: 500; fill: #64748b; }
+    .node-title { font-weight: 700; fill: #111827; }
+    .node-sub { font-weight: 500; fill: #6b7280; }
+    .node-type { font-size: 12px; font-weight: 700; fill: #64748b; letter-spacing: 0.08em; }
+    .arrow-label { font-size: 12px; font-weight: 600; fill: #6b7280; }
+    .legend { font-size: 12px; font-weight: 500; fill: #6b7280; }
+    .footnote { font-size: 12px; font-weight: 500; fill: #64748b; }
+    .metric-label { font-size: 8.5px; font-weight: 700; fill: #64748b; text-transform: uppercase; }
+    .metric-value { font-size: 9.5px; font-weight: 700; fill: #111827; }
+    </style>
+  </defs>
+  <rect data-graph-role="background" width="1600.0" height="2128.0" fill="#ffffff"/>
+  <text x="800.0" y="56" text-anchor="middle" class="title">图 I · Qwen3-TTS × Ascend 全流程数据流（编排 → Talker AR → OmniConnector → Code2Wav → 音频流）</text>
+  <text x="800.0" y="82" text-anchor="middle" class="subtitle">绿=入口/输出 · 琥珀=编排 · 蓝=Stage 0（AR）· 紫=工段间传输 · 橙=Stage 1（生成）；副标签含 文件:行号 与张量形态</text>
+  <g id="ent" data-graph-role="container" data-container-id="ent" data-semantic-role="boundary" data-graph-bounds="80,150,1520,314">
+  <rect data-graph-role="container" x="80.0" y="150.0" width="1440.0" height="164.0" rx="16.0" fill="#E8F5E9" stroke="#43A047" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="174.0" class="section">① 请求入口（TEXT ＋ REF_AUDIO）</text>
+    <rect id="ent-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="156" width="237.22" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="orch" data-graph-role="container" data-container-id="orch" data-semantic-role="boundary" data-graph-bounds="80,358,1520,522">
+  <rect data-graph-role="container" x="80.0" y="358.0" width="1440.0" height="164.0" rx="16.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="382.0" class="section">② 编排层（LLM 分支 — ENGINE/）</text>
+    <rect id="orch-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="364" width="229.94" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="s0" data-graph-role="container" data-container-id="s0" data-semantic-role="boundary" data-graph-bounds="80,566,1520,998">
+  <rect data-graph-role="container" x="80.0" y="566.0" width="1440.0" height="432.0" rx="16.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="590.0" class="section">③ STAGE 0 进程 · TALKER（LLM_AR — NPUARWORKER / NPUARMODELRUNNER）</text>
+    <rect id="s0-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="572" width="502.94" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="conn" data-graph-role="container" data-container-id="conn" data-semantic-role="boundary" data-graph-bounds="80,1042,1520,1334">
+  <rect data-graph-role="container" x="80.0" y="1042.0" width="1440.0" height="292.0" rx="16.0" fill="#F3E5F5" stroke="#8E24AA" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="1066.0" class="section">④ 工段间传输（OMNICONNECTOR · SHAREDMEMORY）</text>
+    <rect id="conn-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="1048" width="344.6" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="s1" data-graph-role="container" data-container-id="s1" data-semantic-role="boundary" data-graph-bounds="80,1378,1520,1810">
+  <rect data-graph-role="container" x="80.0" y="1378.0" width="1440.0" height="432.0" rx="16.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="1402.0" class="section">⑤ STAGE 1 进程 · CODE2WAV（LLM_GENERATION — NPUGENERATIONWORKER / NPUGENERATIONMODELRUNNER）</text>
+    <rect id="s1-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="1384" width="691.96" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="out" data-graph-role="container" data-container-id="out" data-semantic-role="boundary" data-graph-bounds="80,1854,1520,2018">
+  <rect data-graph-role="container" x="80.0" y="1854.0" width="1440.0" height="164.0" rx="16.0" fill="#E8F5E9" stroke="#43A047" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="1878.0" class="section">⑥ 输出回传（音频流）</text>
+    <rect id="out-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="1860" width="159.22" height="30" fill="none" stroke="none"/>
+  </g>
+  <path id="i1" data-graph-role="edge" data-edge-id="i1" data-source="ent1" data-target="orch1" data-edge-kind="flow" data-topic-id="" data-flow="control" data-motion-role="" data-motion-stage="" data-motion-order="" data-protocol="" data-via="" data-critical-path-id="" data-critical-hop="" data-critical-hops="" data-critical="false" data-bends="0" data-route-stretch="1.0" data-bridges="" d="M 800,290 L 800,414" fill="none" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowA)"/>
+  <path id="i2" data-graph-role="edge" data-edge-id="i2" data-source="orch1" data-target="s0a" data-edge-kind="flow" data-topic-id="" data-flow="control" data-motion-role="" data-motion-stage="" data-motion-order="" data-protocol="" data-via="" data-critical-path-id="" data-critical-hop="" data-critical-hops="" data-critical="false" data-bends="0" data-route-stretch="1.0" data-bridges="" d="M 800,498 L 800,622" fill="none" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowA)"/>
+  <path id="i3" data-graph-role="edge" data-edge-id="i3" data-source="s0c" data-target="conn1" data-edge-kind="flow" data-topic-id="" data-flow="control" data-motion-role="" data-motion-stage="" data-motion-order="" data-protocol="" data-via="" data-critical-path-id="" data-critical-hop="" data-critical-hops="" data-critical="false" data-bends="0" data-route-stretch="1.0" data-bridges="" d="M 800,974 L 800,1098" fill="none" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowA)"/>
+  <path id="i4" data-graph-role="edge" data-edge-id="i4" data-source="conn2" data-target="s1a" data-edge-kind="flow" data-topic-id="" data-flow="control" data-motion-role="" data-motion-stage="" data-motion-order="" data-protocol="" data-via="" data-critical-path-id="" data-critical-hop="" data-critical-hops="" data-critical="false" data-bends="0" data-route-stretch="1.0" data-bridges="" d="M 800,1310 L 800,1434" fill="none" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowA)"/>
+  <path id="i5" data-graph-role="edge" data-edge-id="i5" data-source="s1c" data-target="out1" data-edge-kind="flow" data-topic-id="" data-flow="control" data-motion-role="" data-motion-stage="" data-motion-order="" data-protocol="" data-via="" data-critical-path-id="" data-critical-hop="" data-critical-hops="" data-critical="false" data-bends="0" data-route-stretch="1.0" data-bridges="" d="M 800,1786 L 800,1910" fill="none" stroke="#7c3aed" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrowA)"/>
+  <g id="node-ent1" data-graph-role="node" data-node-id="ent1" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,206,1496,290">
+  <rect x="104.0" y="206.0" width="1392.0" height="84.0" rx="10.0" fill="#E8F5E9" stroke="#43A047" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="HTTP / SDK — 文本 ＋ 参考音频" data-text-max-width="1368.0" x="800.0" y="248.0" text-anchor="middle" class="node-title" font-size="18">HTTP / SDK — 文本 ＋ 参考音频</text>
+  <text data-text-role="subtitle" data-full-text="serving_chat → AsyncOmni.generate（entrypoints/async_omni.py:115）→ Orchestrator" data-text-max-width="1368.0" x="800.0" y="270.0" text-anchor="middle" class="node-sub" font-size="12">serving_chat → AsyncOmni.generate（entrypoints/async_omni.py:115）→ Orchestrator</text>
+  </g>
+  <g id="node-orch1" data-graph-role="node" data-node-id="orch1" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,414,1496,498">
+  <rect x="104.0" y="414.0" width="1392.0" height="84.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="Orchestrator.submit_initial :1075 → StagePool._llm_client → stage0 客户端（ZMQ）" data-text-max-width="1368.0" x="800.0" y="456.0" text-anchor="middle" class="node-title" font-size="18">Orchestrator.submit_initial :1075 → StagePool._llm_client → stage0 客户端（ZMQ）</text>
+  <text data-text-role="subtitle" data-full-text="owns_tokenizer=True：文本分词在 stage 0 完成" data-text-max-width="1368.0" x="800.0" y="478.0" text-anchor="middle" class="node-sub" font-size="12">owns_tokenizer=True：文本分词在 stage 0 完成</text>
+  </g>
+  <g id="node-s0a" data-graph-role="node" data-node-id="s0a" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,622,1496,706">
+  <rect x="104.0" y="622.0" width="1392.0" height="84.0" rx="10.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="OmniARScheduler 连续批处理 → SchedulerOutput" data-text-max-width="1368.0" x="800.0" y="664.0" text-anchor="middle" class="node-title" font-size="18">OmniARScheduler 连续批处理 → SchedulerOutput</text>
+  <text data-text-role="subtitle" data-full-text="async_scheduling · prefix cache 关 · subtalker 采样参数" data-text-max-width="1368.0" x="800.0" y="686.0" text-anchor="middle" class="node-sub" font-size="12">async_scheduling · prefix cache 关 · subtalker 采样参数</text>
+  </g>
+  <g id="node-s0b" data-graph-role="node" data-node-id="s0b" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,750,1496,846">
+  <rect x="104.0" y="750.0" width="1392.0" height="96.0" rx="10.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="Qwen3TTSTalker.forward：talker → talker_mtp（ACLGraphWrapper）→ code predictor（自管 ACL 图桶）" data-text-max-width="1368.0" x="800.0" y="798.0" text-anchor="middle" class="node-title" font-size="18">Qwen3TTSTalker.forward：talker → talker_mtp（ACLGraphWrapper）→ code predictor（自管 ACL 图桶）</text>
+  <text data-text-role="subtitle" data-full-text="NPUARModelRunner.execute_model — 图捕获 npu_ar_model_runner.py:163 _capture_talker_mtp_graphs" data-text-max-width="1368.0" x="800.0" y="820.0" text-anchor="middle" class="node-sub" font-size="12">NPUARModelRunner.execute_model — 图捕获 npu_ar_model_runner.py:163 _capture_talker_mtp_graphs</text>
+  </g>
+  <g id="node-s0c" data-graph-role="node" data-node-id="s0c" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,890,1496,974">
+  <rect x="104.0" y="890.0" width="1392.0" height="84.0" rx="10.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="sample_tokens → codes.audio [1×Q]/步 ＋ codes.ref（一次性发布）" data-text-max-width="1368.0" x="800.0" y="932.0" text-anchor="middle" class="node-title" font-size="18">sample_tokens → codes.audio [1×Q]/步 ＋ codes.ref（一次性发布）</text>
+  <text data-text-role="subtitle" data-full-text="talker_mtp_output_key=(codes,audio)（qwen3_tts_talker.py:226）· Q=16 codebooks" data-text-max-width="1368.0" x="800.0" y="954.0" text-anchor="middle" class="node-sub" font-size="12">talker_mtp_output_key=(codes,audio)（qwen3_tts_talker.py:226）· Q=16 codebooks</text>
+  </g>
+  <g id="node-conn1" data-graph-role="node" data-node-id="conn1" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1098,1496,1182">
+  <rect x="104.0" y="1098.0" width="1392.0" height="84.0" rx="10.0" fill="#F3E5F5" stroke="#8E24AA" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="talker2code2wav_async_chunk（stage_input_processors/qwen3_tts.py:106）" data-text-max-width="1368.0" x="800.0" y="1140.0" text-anchor="middle" class="node-title" font-size="18">talker2code2wav_async_chunk（stage_input_processors/qwen3_tts.py:106）</text>
+  <text data-text-role="subtitle" data-full-text="chunk 调度：IC 1 帧 → 稳态 25 帧 ＋ left_context 72 ＋ ref_code 一次性" data-text-max-width="1368.0" x="800.0" y="1162.0" text-anchor="middle" class="node-sub" font-size="12">chunk 调度：IC 1 帧 → 稳态 25 帧 ＋ left_context 72 ＋ ref_code 一次性</text>
+  </g>
+  <g id="node-conn2" data-graph-role="node" data-node-id="conn2" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1226,1496,1310">
+  <rect x="104.0" y="1226.0" width="1392.0" height="84.0" rx="10.0" fill="#F3E5F5" stroke="#8E24AA" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="SharedMemoryConnector put/get — codec_streaming ＋ talker_first_audio 首包旁路" data-text-max-width="1368.0" x="800.0" y="1268.0" text-anchor="middle" class="node-title" font-size="18">SharedMemoryConnector put/get — codec_streaming ＋ talker_first_audio 首包旁路</text>
+  <text data-text-role="subtitle" data-full-text="deploy connectors.extra：connector_get_sleep_s=0.01 · max_wait_first_chunk=3000ms" data-text-max-width="1368.0" x="800.0" y="1290.0" text-anchor="middle" class="node-sub" font-size="12">deploy connectors.extra：connector_get_sleep_s=0.01 · max_wait_first_chunk=3000ms</text>
+  </g>
+  <g id="node-s1a" data-graph-role="node" data-node-id="s1a" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1434,1496,1518">
+  <rect x="104.0" y="1434.0" width="1392.0" height="84.0" rx="10.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="execute_model :109：register_chunk_recv → _update_request_states（async_chunk 拼窗）" data-text-max-width="1368.0" x="800.0" y="1476.0" text-anchor="middle" class="node-title" font-size="18">execute_model :109：register_chunk_recv → _update_request_states（async_chunk 拼窗）</text>
+  <text data-text-role="subtitle" data-full-text="npu_generation_model_runner.py — chunk 逐包到达即解码" data-text-max-width="1368.0" x="800.0" y="1498.0" text-anchor="middle" class="node-sub" font-size="12">npu_generation_model_runner.py — chunk 逐包到达即解码</text>
+  </g>
+  <g id="node-s1b" data-graph-role="node" data-node-id="s1b" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1562,1496,1658">
+  <rect x="104.0" y="1562.0" width="1392.0" height="96.0" rx="10.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="Qwen3TTSCode2Wav.forward :259 → decoder.chunked_decode" data-text-max-width="1368.0" x="800.0" y="1610.0" text-anchor="middle" class="node-title" font-size="18">Qwen3TTSCode2Wav.forward :259 → decoder.chunked_decode</text>
+  <text data-text-role="subtitle" data-full-text="input_ids=[context 72＋chunk]×Q；NPU patch：jit off ＋ Linear/Conv 权重 NZ 转换（qwen3_tts.py:44-66）" data-text-max-width="1368.0" x="800.0" y="1632.0" text-anchor="middle" class="node-sub" font-size="12">input_ids=[context 72＋chunk]×Q；NPU patch：jit off ＋ Linear/Conv 权重 NZ 转换（qwen3_tts.py:44-66）</text>
+  </g>
+  <g id="node-s1c" data-graph-role="node" data-node-id="s1c" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1702,1496,1786">
+  <rect x="104.0" y="1702.0" width="1392.0" height="84.0" rx="10.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="wav chunk ＋ sr → OmniOutput" data-text-max-width="1368.0" x="800.0" y="1744.0" text-anchor="middle" class="node-title" font-size="18">wav chunk ＋ sr → OmniOutput</text>
+  <text data-text-role="subtitle" data-full-text="final_output_type=audio · 每包即时产出" data-text-max-width="1368.0" x="800.0" y="1766.0" text-anchor="middle" class="node-sub" font-size="12">final_output_type=audio · 每包即时产出</text>
+  </g>
+  <g id="node-out1" data-graph-role="node" data-node-id="out1" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1910,1496,1994">
+  <rect x="104.0" y="1910.0" width="1392.0" height="84.0" rx="10.0" fill="#E8F5E9" stroke="#43A047" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="OmniRequestOutput（audio chunks 流式）→ HTTP SSE" data-text-max-width="1368.0" x="800.0" y="1952.0" text-anchor="middle" class="node-title" font-size="18">OmniRequestOutput（audio chunks 流式）→ HTTP SSE</text>
+  <text data-text-role="subtitle" data-full-text="codes.audio / codec_frames 按 CONCAT_DIM0 累积（pipeline.py:22-27）" data-text-max-width="1368.0" x="800.0" y="1974.0" text-anchor="middle" class="node-sub" font-size="12">codes.audio / codec_frames 按 CONCAT_DIM0 累积（pipeline.py:22-27）</text>
+  </g>
+  <g id="i1-label" data-graph-role="label" data-owner="i1" data-graph-bounds="759,338,797,358">
+  <rect x="759.0" y="338.0" width="38.0" height="20" rx="6" fill="#ffffff" opacity="0.94"/>
+  <text x="778.0" y="352.0" text-anchor="middle" class="arrow-label">请求</text>
+  </g>
+  <g id="i2-label" data-graph-role="label" data-owner="i2" data-graph-bounds="759.12,546,796.88,566">
+  <rect x="759.12" y="546.0" width="37.76" height="20" rx="6" fill="#ffffff" opacity="0.94"/>
+  <text x="778.0" y="560.0" text-anchor="middle" class="arrow-label">ZMQ</text>
+  </g>
+  <g id="i3-label" data-graph-role="label" data-owner="i3" data-graph-bounds="731.88,1022,797,1042">
+  <rect x="731.88" y="1022.0" width="65.12" height="20" rx="6" fill="#ffffff" opacity="0.94"/>
+  <text x="764.44" y="1036.0" text-anchor="middle" class="arrow-label">codes 帧</text>
+  </g>
+  <g id="i4-label" data-graph-role="label" data-owner="i4" data-graph-bounds="748.2,1358,797,1378">
+  <rect x="748.2" y="1358.0" width="48.8" height="20" rx="6" fill="#ffffff" opacity="0.94"/>
+  <text x="772.6" y="1372.0" text-anchor="middle" class="arrow-label">chunk</text>
+  </g>
+  <g id="i5-label" data-graph-role="label" data-owner="i5" data-graph-bounds="760,1834,796,1854">
+  <rect x="760.0" y="1834.0" width="36.0" height="20" rx="6" fill="#ffffff" opacity="0.94"/>
+  <text x="778.0" y="1848.0" text-anchor="middle" class="arrow-label">wav</text>
+  </g>
+  <g id="legend" data-graph-role="legend">
+    <rect id="legend-zone" data-graph-role="reserved" data-reserved-kind="legend" x="32" y="2032" width="106" height="46" rx="10" fill="none" stroke="none"/>
+    <line data-graph-role="decoration" x1="42.0" y1="2046.0" x2="72.0" y2="2046.0" stroke="#7c3aed" stroke-width="2.4" marker-end="url(#arrowA)"/>
+    <text data-graph-role="decoration" x="82.0" y="2050.0" class="legend">数据流</text>
+  </g>
+  <g id="footer" data-graph-role="reserved" data-graph-bounds="42,2100,728,2116">
+  <text x="42.0" y="2112.0" class="footnote">基线 commit 02bb9519a · deploy=qwen3_tts.yaml（async_chunk · NPU v1 · PIECEWISE）· 详见 Ascend 全流程代码分析报告</text>
+  </g>
+</svg>

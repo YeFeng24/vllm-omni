@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1268" width="1600" height="1268" data-generator="fireworks-tech-graph" data-schema-version="1" data-text-metrics="heuristic-v1" data-style-id="1" data-visual-theme="Flat Icon" data-diagram-type="architecture" data-motion-scene="" data-semantic-profile="generic" data-semantic-valid="true" data-quality-profile="showcase" data-max-bends-per-edge="2" data-max-total-bends="8" data-max-route-stretch="1.35" data-max-bridged-crossings="0" data-min-node-gap="40.0" data-min-container-gutter="20.0" data-min-label-clearance="4.0" data-min-segment-length="16.0">
+  <defs>
+    <marker id="arrowA" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowB" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+    <marker id="arrowC" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowE" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f97316"/>
+    </marker>
+    <marker id="arrowF" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowH" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowGlass" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+    <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', 'Microsoft JhengHei', 'SimHei', sans-serif; }
+    .title { font-size: 30px; font-weight: 700; fill: #111827; }
+    .subtitle { font-size: 14px; font-weight: 500; fill: #6b7280; }
+    .section { font-size: 13px; font-weight: 700; fill: #2563eb; letter-spacing: 1.4px; }
+    .section-sub { font-size: 12px; font-weight: 500; fill: #64748b; }
+    .node-title { font-weight: 700; fill: #111827; }
+    .node-sub { font-weight: 500; fill: #6b7280; }
+    .node-type { font-size: 12px; font-weight: 700; fill: #64748b; letter-spacing: 0.08em; }
+    .arrow-label { font-size: 12px; font-weight: 600; fill: #6b7280; }
+    .legend { font-size: 12px; font-weight: 500; fill: #6b7280; }
+    .footnote { font-size: 12px; font-weight: 500; fill: #64748b; }
+    .metric-label { font-size: 8.5px; font-weight: 700; fill: #64748b; text-transform: uppercase; }
+    .metric-value { font-size: 9.5px; font-weight: 700; fill: #111827; }
+    </style>
+  </defs>
+  <rect data-graph-role="background" width="1600.0" height="1268.0" fill="#ffffff"/>
+  <text x="800.0" y="56" text-anchor="middle" class="title">图 E · Diffusion 子系统展开（概念图中被折叠的能力拆包 ＋ NPU 差距标注）</text>
+  <text x="800.0" y="82" text-anchor="middle" class="subtitle">6 大能力域 ＋ 模型仓库 — 红 = GPU 专属能力，NPU 无对应实现</text>
+  <g id="dif" data-graph-role="container" data-container-id="dif" data-semantic-role="boundary" data-graph-bounds="80,150,1520,1158">
+  <rect data-graph-role="container" x="80.0" y="150.0" width="1440.0" height="1008.0" rx="16.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="174.0" class="section">VLLM_OMNI/DIFFUSION/ — 638 文件 / 27.0 万行（平台无关栈，经 CURRENT_OMNI_PLATFORM 钩子下沉硬件差异）</text>
+    <rect id="dif-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="156" width="713.02" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="node-d0" data-graph-role="node" data-node-id="d0" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,206,553.3,324">
+  <rect x="104.0" y="206.0" width="449.3" height="118.0" rx="10.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="引擎层" data-text-max-width="425.3" x="328.65" y="265.0" text-anchor="middle" class="node-title" font-size="18">引擎层</text>
+  <text data-text-role="subtitle" data-full-text="diffusion_engine.py — asyncio · 取消注册表 · 扩散 KV 控制面；executor/ 三种执行器" data-text-max-width="425.3" x="328.65" y="287.0" text-anchor="middle" class="node-sub" font-size="10.5">diffusion_engine.py — asyncio · 取消注册表 · 扩散 KV 控制面；executor/…</text>
+  </g>
+  <g id="node-d1" data-graph-role="node" data-node-id="d1" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="597.3,206,1496,324">
+  <rect x="597.3" y="206.0" width="898.7" height="118.0" rx="10.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="调度 sched/ · 6 文件" data-text-max-width="874.7" x="1046.65" y="265.0" text-anchor="middle" class="node-title" font-size="18">调度 sched/ · 6 文件</text>
+  <text data-text-role="subtitle" data-full-text="批兼容键 · 扩散 KV base · 准入合并 · 步级并波 · sigma 钉死" data-text-max-width="874.7" x="1046.65" y="287.0" text-anchor="middle" class="node-sub" font-size="12">批兼容键 · 扩散 KV base · 准入合并 · 步级并波 · sigma 钉死</text>
+  </g>
+  <g id="node-d2" data-graph-role="node" data-node-id="d2" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,368,553.3,486">
+  <rect x="104.0" y="368.0" width="449.3" height="118.0" rx="10.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="执行 worker/ · 7 文件" data-text-max-width="425.3" x="328.65" y="427.0" text-anchor="middle" class="node-title" font-size="18">执行 worker/ · 7 文件</text>
+  <text data-text-role="subtitle" data-full-text="diffusion_worker ＋ diffusion_model_runner — cache/offload/compile 装配点" data-text-max-width="425.3" x="328.65" y="449.0" text-anchor="middle" class="node-sub" font-size="10.5">diffusion_worker ＋ diffusion_model_runner — cache/offload/compile 装…</text>
+  </g>
+  <g id="node-d3" data-graph-role="node" data-node-id="d3" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="597.3,368,1496,486">
+  <rect x="597.3" y="368.0" width="898.7" height="118.0" rx="10.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="注意力 attention/ · 43 文件" data-text-max-width="874.7" x="1046.65" y="427.0" text-anchor="middle" class="node-title" font-size="18">注意力 attention/ · 43 文件</text>
+  <text data-text-role="subtitle" data-full-text="registry 12 后端 · ops/ block_sparse · parallel/ ulysses·ring·allgather" data-text-max-width="874.7" x="1046.65" y="449.0" text-anchor="middle" class="node-sub" font-size="12">registry 12 后端 · ops/ block_sparse · parallel/ ulysses·ring·allgather</text>
+  </g>
+  <g id="node-d4" data-graph-role="node" data-node-id="d4" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,530,553.3,648">
+  <rect x="104.0" y="530.0" width="449.3" height="118.0" rx="10.0" fill="#E8F5E9" stroke="#43A047" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="缓存 cache/ · 33 文件" data-text-max-width="425.3" x="328.65" y="589.0" text-anchor="middle" class="node-title" font-size="18">缓存 cache/ · 33 文件</text>
+  <text data-text-role="subtitle" data-full-text="selector → cachedit / teacache / magcache / seacache / stepcache" data-text-max-width="425.3" x="328.65" y="611.0" text-anchor="middle" class="node-sub" font-size="11.44">selector → cachedit / teacache / magcache / seacache / stepcache</text>
+  </g>
+  <g id="node-d5" data-graph-role="node" data-node-id="d5" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="597.3,530,1496,648">
+  <rect x="597.3" y="530.0" width="898.7" height="118.0" rx="10.0" fill="#E8F5E9" stroke="#43A047" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="Offload offloader/ · 16 文件" data-text-max-width="874.7" x="1046.65" y="589.0" text-anchor="middle" class="node-title" font-size="18">Offload offloader/ · 16 文件</text>
+  <text data-text-role="subtitle" data-full-text="sequential / layerwise / DLO distributed_layerwise（CUDA＋NPU）" data-text-max-width="874.7" x="1046.65" y="611.0" text-anchor="middle" class="node-sub" font-size="12">sequential / layerwise / DLO distributed_layerwise（CUDA＋NPU）</text>
+  </g>
+  <g id="node-d6" data-graph-role="node" data-node-id="d6" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,692,553.3,810">
+  <rect x="104.0" y="692.0" width="449.3" height="118.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="并行 distributed/ · 40 文件" data-text-max-width="425.3" x="328.65" y="751.0" text-anchor="middle" class="node-title" font-size="18">并行 distributed/ · 40 文件</text>
+  <text data-text-role="subtitle" data-full-text="cfg_parallel · hsdp(FSDP2) · sp_plan 声明式 · pipeline · vae_patch" data-text-max-width="425.3" x="328.65" y="773.0" text-anchor="middle" class="node-sub" font-size="11.58">cfg_parallel · hsdp(FSDP2) · sp_plan 声明式 · pipeline · vae_patch</text>
+  </g>
+  <g id="node-d7" data-graph-role="node" data-node-id="d7" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="597.3,692,1496,810">
+  <rect x="597.3" y="692.0" width="898.7" height="118.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="扩散 KV diffusion_kv/" data-text-max-width="874.7" x="1046.65" y="751.0" text-anchor="middle" class="node-title" font-size="18">扩散 KV diffusion_kv/</text>
+  <text data-text-role="subtitle" data-full-text="DiT paged KV — PAGED_SCHEDULER；NPU → Ascend FIA 128 页" data-text-max-width="874.7" x="1046.65" y="773.0" text-anchor="middle" class="node-sub" font-size="12">DiT paged KV — PAGED_SCHEDULER；NPU → Ascend FIA 128 页</text>
+  </g>
+  <g id="node-d8" data-graph-role="node" data-node-id="d8" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,854,553.3,972">
+  <rect x="104.0" y="854.0" width="449.3" height="118.0" rx="10.0" fill="#F3E5F5" stroke="#8E24AA" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="模型 models/ · 63 项" data-text-max-width="425.3" x="328.65" y="913.0" text-anchor="middle" class="node-title" font-size="18">模型 models/ · 63 项</text>
+  <text data-text-role="subtitle" data-full-text="wan2_2 / qwen_image* / flux* / ltx2 / hunyuan_* … [382 文件 19.3 万行]" data-text-max-width="425.3" x="328.65" y="935.0" text-anchor="middle" class="node-sub" font-size="10.92">wan2_2 / qwen_image* / flux* / ltx2 / hunyuan_* … [382 文件 19.3 万行]</text>
+  </g>
+  <g id="node-d9" data-graph-role="node" data-node-id="d9" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="597.3,854,1496,972">
+  <rect x="597.3" y="854.0" width="898.7" height="118.0" rx="10.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="量化 quantization/" data-text-max-width="874.7" x="1046.65" y="913.0" text-anchor="middle" class="node-title" font-size="18">量化 quantization/</text>
+  <text data-text-role="subtitle" data-full-text="✗ hsdp_fp8.py — HSDP×FP8 Cutlass 布局兼容（GPU 专属）" data-text-max-width="874.7" x="1046.65" y="935.0" text-anchor="middle" class="node-sub" font-size="12">✗ hsdp_fp8.py — HSDP×FP8 Cutlass 布局兼容（GPU 专属）</text>
+  </g>
+  <g id="node-d10" data-graph-role="node" data-node-id="d10" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1016,553.3,1134">
+  <rect x="104.0" y="1016.0" width="449.3" height="118.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="支撑" data-text-max-width="425.3" x="328.65" y="1075.0" text-anchor="middle" class="node-title" font-size="18">支撑</text>
+  <text data-text-role="subtitle" data-full-text="△ lora / hooks / interaction / postprocess / profiler / compile.py 区域编译" data-text-max-width="425.3" x="328.65" y="1097.0" text-anchor="middle" class="node-sub" font-size="10.5">△ lora / hooks / interaction / postprocess / profiler / compile.py 区域…</text>
+  </g>
+  <g id="node-d11" data-graph-role="node" data-node-id="d11" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="597.3,1016,1496,1134">
+  <rect x="597.3" y="1016.0" width="898.7" height="118.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="与平台层的接口" data-text-max-width="874.7" x="1046.65" y="1075.0" text-anchor="middle" class="node-title" font-size="18">与平台层的接口</text>
+  <text data-text-role="subtitle" data-full-text="worker 装配点调用 get_diffusion_* 钩子（NPU 差距标注见图 F/G）" data-text-max-width="874.7" x="1046.65" y="1097.0" text-anchor="middle" class="node-sub" font-size="12">worker 装配点调用 get_diffusion_* 钩子（NPU 差距标注见图 F/G）</text>
+  </g>
+  <g id="footer" data-graph-role="reserved" data-graph-bounds="42,1240,420,1256">
+  <text x="42.0" y="1252.0" class="footnote">引擎/调度（蓝）· 执行/注意力（橙）· 缓存/卸载（绿）· 并行/KV（青）· 模型（紫）· 支撑（琥珀）</text>
+  </g>
+</svg>

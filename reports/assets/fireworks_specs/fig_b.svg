@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1904" width="1600" height="1904" data-generator="fireworks-tech-graph" data-schema-version="1" data-text-metrics="heuristic-v1" data-style-id="1" data-visual-theme="Flat Icon" data-diagram-type="architecture" data-motion-scene="" data-semantic-profile="generic" data-semantic-valid="true" data-quality-profile="showcase" data-max-bends-per-edge="2" data-max-total-bends="8" data-max-route-stretch="1.35" data-max-bridged-crossings="0" data-min-node-gap="40.0" data-min-container-gutter="20.0" data-min-label-clearance="4.0" data-min-segment-length="16.0">
+  <defs>
+    <marker id="arrowA" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowB" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+    <marker id="arrowC" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowE" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#f97316"/>
+    </marker>
+    <marker id="arrowF" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrowG" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ef4444"/>
+    </marker>
+    <marker id="arrowH" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+    <filter id="shadowSoft" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowGlass" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+    <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', 'Microsoft JhengHei', 'SimHei', sans-serif; }
+    .title { font-size: 30px; font-weight: 700; fill: #111827; }
+    .subtitle { font-size: 14px; font-weight: 500; fill: #6b7280; }
+    .section { font-size: 13px; font-weight: 700; fill: #2563eb; letter-spacing: 1.4px; }
+    .section-sub { font-size: 12px; font-weight: 500; fill: #64748b; }
+    .node-title { font-weight: 700; fill: #111827; }
+    .node-sub { font-weight: 500; fill: #6b7280; }
+    .node-type { font-size: 12px; font-weight: 700; fill: #64748b; letter-spacing: 0.08em; }
+    .arrow-label { font-size: 12px; font-weight: 600; fill: #6b7280; }
+    .legend { font-size: 12px; font-weight: 500; fill: #6b7280; }
+    .footnote { font-size: 12px; font-weight: 500; fill: #64748b; }
+    .metric-label { font-size: 8.5px; font-weight: 700; fill: #64748b; text-transform: uppercase; }
+    .metric-value { font-size: 9.5px; font-weight: 700; fill: #111827; }
+    </style>
+  </defs>
+  <rect data-graph-role="background" width="1600.0" height="1904.0" fill="#ffffff"/>
+  <text x="800.0" y="56" text-anchor="middle" class="title">图 B · 工程七层视图（重绘 · 规模标注 ＋ NPU 差距标注）</text>
+  <text x="800.0" y="82" text-anchor="middle" class="subtitle">官方概念布局 ＋ 补画编排层（L2）与平台层（L6）— 红/琥珀为 NPU 差距位 · L6 含 _310p 子平台框</text>
+  <g id="l1" data-graph-role="container" data-container-id="l1" data-semantic-role="boundary" data-graph-bounds="80,150,1520,282">
+  <rect data-graph-role="container" x="80.0" y="150.0" width="1440.0" height="132.0" rx="16.0" fill="#E8F5E9" stroke="#43A047" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="174.0" class="section">L1 · ENTRYPOINTS（API 层）— 接单交付</text>
+    <rect id="l1-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="156" width="268.68" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="l2" data-graph-role="container" data-container-id="l2" data-semantic-role="boundary" data-graph-bounds="80,326,1520,510">
+  <rect data-graph-role="container" x="80.0" y="326.0" width="1440.0" height="184.0" rx="16.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="350.0" class="section">L2 · 编排 ★概念图折叠 — OMNI 区别于 VLLM 的关键</text>
+    <rect id="l2-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="332" width="337.32" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="l3" data-graph-role="container" data-container-id="l3" data-semantic-role="boundary" data-graph-bounds="80,554,960,686">
+  <rect data-graph-role="container" x="80.0" y="554.0" width="880.0" height="132.0" rx="16.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="578.0" class="section">L3 · AR 调度 — 文本工段</text>
+    <rect id="l3-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="560" width="176.64" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="l4" data-graph-role="container" data-container-id="l4" data-semantic-role="boundary" data-graph-bounds="80,730,960,1022">
+  <rect data-graph-role="container" x="80.0" y="730.0" width="880.0" height="292.0" rx="16.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="754.0" class="section">L4 · WORKER（三套并存）— 工段执行</text>
+    <rect id="l4-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="736" width="252.56" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="l5" data-graph-role="container" data-container-id="l5" data-semantic-role="boundary" data-graph-bounds="80,1066,960,1198">
+  <rect data-graph-role="container" x="80.0" y="1066.0" width="880.0" height="132.0" rx="16.0" fill="#E8EAF6" stroke="#3949AB" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="1090.0" class="section">L5A · 公共执行底座 — 两线共用</text>
+    <rect id="l5-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="1072" width="216.42" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="dfb" data-graph-role="container" data-container-id="dfb" data-semantic-role="boundary" data-graph-bounds="990,554,1520,1174">
+  <rect data-graph-role="container" x="990.0" y="554.0" width="530.0" height="620.0" rx="16.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="1008.0" y="578.0" class="section">L5B · DIFFUSION 子系统</text>
+    <rect id="dfb-header" data-graph-role="reserved" data-reserved-kind="container-header" x="998" y="560" width="174.3" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="l6" data-graph-role="container" data-container-id="l6" data-semantic-role="boundary" data-graph-bounds="80,1242,1520,1426">
+  <rect data-graph-role="container" x="80.0" y="1242.0" width="1440.0" height="184.0" rx="16.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="1266.0" class="section">L6 · 平台层 ★概念图折叠 — 硬件适配（图 F 放大）</text>
+    <rect id="l6-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="1248" width="329" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="l7" data-graph-role="container" data-container-id="l7" data-semantic-role="boundary" data-graph-bounds="80,1470,1520,1602">
+  <rect data-graph-role="container" x="80.0" y="1470.0" width="1440.0" height="132.0" rx="16.0" fill="#F3E5F5" stroke="#8E24AA" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="1494.0" class="section">L7 · 分布式传输 — 工段间快递</text>
+    <rect id="l7-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="1476" width="208.88" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="vl" data-graph-role="container" data-container-id="vl" data-semantic-role="boundary" data-graph-bounds="80,1646,1520,1774">
+  <rect data-graph-role="container" x="80.0" y="1646.0" width="1440.0" height="128.0" rx="16.0" fill="#F4F6F8" stroke="#90A4AE" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="98.0" y="1670.0" class="section">VLLM CORE（PIP 依赖 — 整个系统 PIP 安装 VLLM，AR 线直接复用）</text>
+    <rect id="vl-header" data-graph-role="reserved" data-reserved-kind="container-header" x="88" y="1652" width="433.26" height="30" fill="none" stroke="none"/>
+  </g>
+  <g id="node-l1n" data-graph-role="node" data-node-id="l1n" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,206,1496,258">
+  <rect x="104.0" y="206.0" width="1392.0" height="52.0" rx="10.0" fill="#E8F5E9" stroke="#43A047" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="entrypoints/ 115 文件 4.0 万行（openai/ 74 文件 3.0 万）＋ apps/（ComfyUI）" data-text-max-width="1368.0" x="800.0" y="232.0" text-anchor="middle" class="node-title" font-size="18">entrypoints/ 115 文件 4.0 万行（openai/ 74 文件 3.0 万）＋ apps/（ComfyUI）</text>
+  </g>
+  <g id="node-l2a" data-graph-role="node" data-node-id="l2a" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,382,553.3,486">
+  <rect x="104.0" y="382.0" width="449.3" height="104.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="多工段总调度" data-text-max-width="425.3" x="328.65" y="434.0" text-anchor="middle" class="node-title" font-size="18">多工段总调度</text>
+  <text data-text-role="subtitle" data-full-text="engine/ 59 文件 3.1 万行 — orchestrator（asyncio）· stage_pool（每工段一进程）" data-text-max-width="425.3" x="328.65" y="456.0" text-anchor="middle" class="node-sub" font-size="10.5">engine/ 59 文件 3.1 万行 — orchestrator（asyncio）· stage_pool（每工段…</text>
+  </g>
+  <g id="node-l2b" data-graph-role="node" data-node-id="l2b" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="597.3,382,1496,486">
+  <rect x="597.3" y="382.0" width="898.7" height="104.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="准入与弹性" data-text-max-width="874.7" x="1046.65" y="434.0" text-anchor="middle" class="node-title" font-size="18">准入与弹性</text>
+  <text data-text-role="subtitle" data-full-text="stage_admission fail-fast · phase_lock · membership · cfg_companion" data-text-max-width="874.7" x="1046.65" y="456.0" text-anchor="middle" class="node-sub" font-size="12">stage_admission fail-fast · phase_lock · membership · cfg_companion</text>
+  </g>
+  <g id="node-l3n" data-graph-role="node" data-node-id="l3n" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,610,936,662">
+  <rect x="104.0" y="610.0" width="832.0" height="52.0" rx="10.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="core/ 17 文件 8.6 千行 — sched/（OmniARScheduler）＋ prefix_cache/" data-text-max-width="808.0" x="520.0" y="636.0" text-anchor="middle" class="node-title" font-size="18">core/ 17 文件 8.6 千行 — sched/（OmniARScheduler）＋ prefix_cache/</text>
+  </g>
+  <g id="node-l4a" data-graph-role="node" data-node-id="l4a" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,786,359.6,870">
+  <rect x="104.0" y="786.0" width="255.6" height="84.0" rx="10.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="worker/ 19 文件 7.6 千行（GPU v1）" data-text-max-width="231.6" x="231.8" y="828.0" text-anchor="middle" class="node-title" font-size="12.32">worker/ 19 文件 7.6 千行（GPU v1）</text>
+  <text data-text-role="subtitle" data-full-text="全平台" data-text-max-width="231.6" x="231.8" y="850.0" text-anchor="middle" class="node-sub" font-size="12">全平台</text>
+  </g>
+  <g id="node-l4b" data-graph-role="node" data-node-id="l4b" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="403.6,786,936,870">
+  <rect x="403.6" y="786.0" width="532.4" height="84.0" rx="10.0" fill="#FFEBEE" stroke="#E53935" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="worker_v2/ 16 文件（MRv2）" data-text-max-width="508.4" x="669.8" y="828.0" text-anchor="middle" class="node-title" font-size="18">worker_v2/ 16 文件（MRv2）</text>
+  <text data-text-role="subtitle" data-full-text="✗ duplex / 流式音频 — GPU-only" data-text-max-width="508.4" x="669.8" y="850.0" text-anchor="middle" class="node-sub" font-size="12">✗ duplex / 流式音频 — GPU-only</text>
+  </g>
+  <g id="node-l4c" data-graph-role="node" data-node-id="l4c" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,914,936,998">
+  <rect x="104.0" y="914.0" width="832.0" height="84.0" rx="10.0" fill="#E3F2FD" stroke="#1E88E5" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="platforms/npu/worker/ — NPU v1（AR ＋ Generation runner）" data-text-max-width="808.0" x="520.0" y="956.0" text-anchor="middle" class="node-title" font-size="18">platforms/npu/worker/ — NPU v1（AR ＋ Generation runner）</text>
+  <text data-text-role="subtitle" data-full-text="is_310p → NPUWorker310（worker/base.py:10）" data-text-max-width="808.0" x="520.0" y="978.0" text-anchor="middle" class="node-sub" font-size="12">is_310p → NPUWorker310（worker/base.py:10）</text>
+  </g>
+  <g id="node-l5n" data-graph-role="node" data-node-id="l5n" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1122,936,1174">
+  <rect x="104.0" y="1122.0" width="832.0" height="52.0" rx="10.0" fill="#E8EAF6" stroke="#3949AB" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="model_executor/ 574 文件 19.7 万行 — 模型/层/算子注册（被依赖第一名）" data-text-max-width="808.0" x="520.0" y="1148.0" text-anchor="middle" class="node-title" font-size="18">model_executor/ 574 文件 19.7 万行 — 模型/层/算子注册（被依赖第一名）</text>
+  </g>
+  <g id="node-dfb1" data-graph-role="node" data-node-id="dfb1" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="1014,610,1496,706">
+  <rect x="1014.0" y="610.0" width="482.0" height="96.0" rx="10.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="diffusion/ 638 文件 27.0 万行" data-text-max-width="458.0" x="1255.0" y="658.0" text-anchor="middle" class="node-title" font-size="18">diffusion/ 638 文件 27.0 万行</text>
+  <text data-text-role="subtitle" data-full-text="engine ＋ sched 双模式 ＋ worker 装配点" data-text-max-width="458.0" x="1255.0" y="680.0" text-anchor="middle" class="node-sub" font-size="12">engine ＋ sched 双模式 ＋ worker 装配点</text>
+  </g>
+  <g id="node-dfb2" data-graph-role="node" data-node-id="dfb2" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="1014,750,1496,846">
+  <rect x="1014.0" y="750.0" width="482.0" height="96.0" rx="10.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="能力折叠（图 E 展开）" data-text-max-width="458.0" x="1255.0" y="798.0" text-anchor="middle" class="node-title" font-size="18">能力折叠（图 E 展开）</text>
+  <text data-text-role="subtitle" data-full-text="attention 12 后端 · cache 5 后端 · offloader" data-text-max-width="458.0" x="1255.0" y="820.0" text-anchor="middle" class="node-sub" font-size="12">attention 12 后端 · cache 5 后端 · offloader</text>
+  </g>
+  <g id="node-dfb3" data-graph-role="node" data-node-id="dfb3" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="1014,890,1496,986">
+  <rect x="1014.0" y="890.0" width="482.0" height="96.0" rx="10.0" fill="#FFF3E0" stroke="#FB8C00" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="并行 ＋ 扩散 KV ＋ 模型" data-text-max-width="458.0" x="1255.0" y="938.0" text-anchor="middle" class="node-title" font-size="18">并行 ＋ 扩散 KV ＋ 模型</text>
+  <text data-text-role="subtitle" data-full-text="cfg·hsdp·sp_plan·pp ＋ paged KV ＋ models/ 63 项" data-text-max-width="458.0" x="1255.0" y="960.0" text-anchor="middle" class="node-sub" font-size="12">cfg·hsdp·sp_plan·pp ＋ paged KV ＋ models/ 63 项</text>
+  </g>
+  <g id="node-l6a" data-graph-role="node" data-node-id="l6a" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1298,508.2,1402">
+  <rect x="104.0" y="1298.0" width="404.2" height="104.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="npu/ 32 文件（唯一完整子树）" data-text-max-width="380.2" x="306.1" y="1350.0" text-anchor="middle" class="node-title" font-size="18">npu/ 32 文件（唯一完整子树）</text>
+  <text data-text-role="subtitle" data-full-text="△ platform · worker · layers · quant · models" data-text-max-width="380.2" x="306.1" y="1372.0" text-anchor="middle" class="node-sub" font-size="12">△ platform · worker · layers · quant · models</text>
+  </g>
+  <g id="node-l6a310" data-graph-role="node" data-node-id="l6a310" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="552.2,1298,956.4,1402">
+  <rect x="552.2" y="1298.0" width="404.2" height="104.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="_310p/ · 310P 子平台" data-text-max-width="380.2" x="754.3000000000001" y="1350.0" text-anchor="middle" class="node-title" font-size="18">_310p/ · 310P 子平台</text>
+  <text data-text-role="subtitle" data-full-text="△ is_310p → NPUWorker310 · Qwen3-TTS patch" data-text-max-width="380.2" x="754.3000000000001" y="1372.0" text-anchor="middle" class="node-sub" font-size="12">△ is_310p → NPUWorker310 · Qwen3-TTS patch</text>
+  </g>
+  <g id="node-l6b" data-graph-role="node" data-node-id="l6b" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="1000.5,1298,1496,1402">
+  <rect x="1000.5" y="1298.0" width="495.5" height="104.0" rx="10.0" fill="#E0F2F1" stroke="#00897B" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="其他平台" data-text-max-width="471.5" x="1248.25" y="1350.0" text-anchor="middle" class="node-title" font-size="18">其他平台</text>
+  <text data-text-role="subtitle" data-full-text="cuda/ rocm/ xpu/ musa/ — platform ＋ patch" data-text-max-width="471.5" x="1248.25" y="1372.0" text-anchor="middle" class="node-sub" font-size="12">cuda/ rocm/ xpu/ musa/ — platform ＋ patch</text>
+  </g>
+  <g id="node-l7n" data-graph-role="node" data-node-id="l7n" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1526,1496,1578">
+  <rect x="104.0" y="1526.0" width="1392.0" height="52.0" rx="10.0" fill="#FFF8E1" stroke="#FFA000" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="distributed/ 38 文件 1.5 万行 — omni_connectors/ 7 种后端（Mooncake 原生化 RFC #8928 进行中）" data-text-max-width="1368.0" x="800.0" y="1552.0" text-anchor="middle" class="node-title" font-size="18">distributed/ 38 文件 1.5 万行 — omni_connectors/ 7 种后端（Mooncake 原生化 RFC #8928 进行中）</text>
+  <text data-text-role="subtitle" data-full-text="△ " data-text-max-width="1368.0" x="800.0" y="1574.0" text-anchor="middle" class="node-sub" font-size="12">△</text>
+  </g>
+  <g id="node-vln" data-graph-role="node" data-node-id="vln" data-semantic-role="rect" data-motion-role="" data-motion-stage="" data-motion-order="" data-parent="" data-deployment-id="" data-topic-id="" data-span-id="" data-station-order="" data-status="" data-start-ms="" data-duration-ms="" data-parent-span="" data-graph-bounds="104,1702,1496,1750">
+  <rect x="104.0" y="1702.0" width="1392.0" height="48.0" rx="10.0" fill="#F4F6F8" stroke="#90A4AE" stroke-width="1.8"/>
+  <text data-text-role="title" data-full-text="vllm.v1 — 引擎 / 调度器 / KV cache / CUDA Graph" data-text-max-width="1368.0" x="800.0" y="1726.0" text-anchor="middle" class="node-title" font-size="18">vllm.v1 — 引擎 / 调度器 / KV cache / CUDA Graph</text>
+  </g>
+  <g id="footer" data-graph-role="reserved" data-graph-bounds="42,1876,448,1892">
+  <text x="42.0" y="1888.0" class="footnote">历史七层对照：L1 入口 / L2 编排 / L3-L4 AR / L5 扩散＋底座 / L6 平台 / L7 传输</text>
+  </g>
+</svg>
